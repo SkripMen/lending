@@ -1,8 +1,42 @@
 * {
     margin: 0;
+    font-family: "Fedra Sans Pro Light";
+    font-size: 18px;
 }
 
 header {
     background-color: #424242;
     height: 80px;
+}
+
+footer{
+    background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: max-content;
+    height: max-content;
+    padding: 10px 0;
+}
+footer > img{
+    margin-top: 10px;
+    height: 60px;
+    padding-left: 30px;
+}
+footer > p{
+    text-align: center;
+    margin-top: 30px;
+}
+footer > div{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+footer >div>a{
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
