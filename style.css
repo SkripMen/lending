@@ -1,15 +1,45 @@
 * {
     margin: 0;
     font-family: "Fedra Sans Pro Light";
-    font-size: 18px;
+}
+p{
+    cursor: default;
 }
 
 header {
     background-color: #424242;
     height: 80px;
 }
+header>img{
+    margin-top: 10px;
+    height: 60px;
+    padding-left: calc(50% - 210px / 2);
+}
 
-footer{
+.banner {
+    position: relative;
+    width: 100%;
+}
+.banner>img{
+    width: 100%;
+    filter: blur(3px);
+    transition: 1s;
+}
+.banner>img:hover{
+    filter: blur(0);
+}
+
+.text {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 43%;
+}
+
+footer {
+    font-size: 18px;
     background-color: #eaeaea;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -17,26 +47,31 @@ footer{
     height: max-content;
     padding: 10px 0;
 }
-footer > img{
+
+footer >a> img {
     margin-top: 10px;
     height: 60px;
     padding-left: 30px;
 }
-footer > p{
+
+footer > p {
     text-align: center;
     margin-top: 30px;
 }
-footer > div{
+
+footer > div {
     text-align: center;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-footer >div>a{
+
+footer > div > a {
     padding: 10px;
     text-decoration: none;
     color: #000;
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
