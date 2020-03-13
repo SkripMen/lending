@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    font-family: "Fedra Sans Pro Light";
+    /*font-family: "Fedra Sans Pro Light";*/
+    font-family:"Arial" ;
 }
 p{
     cursor: default;
@@ -22,7 +23,7 @@ header>img{
 }
 .banner>img{
     width: 100%;
-    filter: blur(3px);
+    filter: blur(1px);
     transition: 1s;
 }
 .banner>img:hover{
@@ -36,6 +37,102 @@ header>img{
     position: absolute;
     top: 200px;
     left: 43%;
+}
+.comp_info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 20px 40px;
+    height: 700px;
+    background: #424242;
+}
+.comp_info >div{
+    text-align: center;
+    padding-top: 120px;
+    background-size: 150%;
+    background-position: center;
+    height: 230px;
+}
+.bg_img1{
+    background: url("img/pc1.jpg");
+}
+.bg_img2{
+    background: url("img/pc1.jpg");
+}
+.bg_img3{
+    background: url("img/pc1.jpg");
+}
+.bg_img4{
+    background: url("img/pc1.jpg");
+}
+.bg_img5{
+    background: url("img/pc1.jpg");
+}
+.bg_img6{
+    background: url("img/pc1.jpg");
+}
+
+.nigga{
+    background: rgba(0,0,0,0.8);
+    /*background-size: 150%;*/
+    height: 230px;
+}
+.comp_info >div> div > h1{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.comp_info >div> div > a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border: solid 3px white;
+}
+.img_arr{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 20px 40px;
+}
+.img_arr > div{
+    background-position: center;
+    height: 350px;
+}
+.img1{
+    background: url("img/pc1.jpg") no-repeat;
+    background-size: 155%;
+}
+.img2{
+    background: url("img/pc2.jpg") no-repeat;
+    background-size: 140%;
+}
+.img3{
+    background: url("img/pc3.jpg") no-repeat;
+    background-size: 165%;
+}
+.img4{
+    background: url("img/pc4.jpg") no-repeat;
+    background-size: 130%;
+}
+.img5{
+    background: url("img/pc5.jpg") no-repeat;
+    background-size: 170%;
+}
+.img6{
+    background: url("img/pc6.jpg") no-repeat;
+    background-size: 200%;
+}
+.img7{
+    background: url("img/pc7.jpg") no-repeat;
+    background-size: 150%;
+}
+.img8{
+    background: url("img/pc8.jpg") no-repeat;
+    background-size: 110%;
+}
+.img9{
+    background: url("img/pc9.jpg") no-repeat;
+    background-size: 140%;
 }
 
 footer {
