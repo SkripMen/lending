@@ -114,7 +114,8 @@ header>img{
     overflow: auto;
     background: rgba(0,0,0,.7);
 }
-.content_modal{
+
+.content_modal {
     text-align: center;
     position: relative;
     background: #424242;
@@ -123,6 +124,22 @@ header>img{
     width: 80%;
     color: #fff;
 }
+
+.text_modal > h1 {
+    padding-bottom: 25px;
+}
+
+img {
+    width: 150px;
+}
+
+.pc1 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
 .img_arr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -184,10 +201,13 @@ footer {
     padding: 10px 0;
 }
 
-footer >a> img {
-    margin-top: 10px;
-    height: 60px;
-    padding-left: 30px;
+footer > a {
+    width: max-content;
+    margin: 10px 0 0 30px;
+}
+
+footer > a > img {
+    width: 60px;
 }
 
 footer > p {
