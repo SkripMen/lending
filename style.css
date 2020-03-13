@@ -1,7 +1,11 @@
+@font-face {
+    font-family: Fedra Sans Pro Light;
+    src: url("font/FedraSansPro-Light.ttf");
+}
 * {
     margin: 0;
-    /*font-family: "Fedra Sans Pro Light";*/
-    font-family:"Arial" ;
+    font-family: "Fedra Sans Pro Light";
+    /*font-family:"Arial" ;*/
 }
 p{
     cursor: default;
@@ -20,6 +24,8 @@ header>img{
 .banner {
     position: relative;
     width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    background: #424242;
 }
 .banner>img{
     width: 100%;
@@ -47,11 +53,7 @@ header>img{
     background: #424242;
 }
 .comp_info >div{
-    text-align: center;
-    padding-top: 120px;
     background-size: 150%;
-    background-position: center;
-    height: 230px;
 }
 .bg_img1{
     background: url("img/pc1.jpg");
@@ -72,27 +74,42 @@ header>img{
     background: url("img/pc1.jpg");
 }
 
-.nigga{
-    background: rgba(0,0,0,0.8);
-    /*background-size: 150%;*/
+.nigga {
+    background: rgba(0, 0, 0, 0.4);
     height: 230px;
+    text-align: center;
+    padding-top: 120px;
+    background-position: center;
+    height: 230px;
+    transition: .3s;
 }
-.comp_info >div> div > h1{
-    margin-bottom: 20px;
+
+.nigga:hover {
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
 }
-.comp_info >div> div > a{
+
+.comp_info > div > div > h1 {
+    margin-bottom: 20px;
+    color: #FFF;
+    cursor: default;
+}
+.comp_info >div> div > a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     padding: 10px 30px;
     border: solid 3px white;
+    box-shadow: 0 0 30px black;
 }
-.img_arr{
+.img_arr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 20px;
-    margin: 20px 40px;
+    /*margin: 20px 40px;*/
+    padding: 75px 40px;
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+    background: #424242;
 }
 .img_arr > div{
     background-position: center;
@@ -171,4 +188,26 @@ footer > div > a {
 a:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,.7);
+}
+.content_modal{
+    text-align: center;
+    position: relative;
+    background: #424242;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    color: #fff;
+
 }
