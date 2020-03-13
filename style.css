@@ -133,7 +133,8 @@ img {
     width: 150px;
 }
 
-.pc1 {
+.pc1,
+.pc2 {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, 1fr);
