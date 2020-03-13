@@ -96,7 +96,14 @@ header>img{
     color: #FFF;
     cursor: default;
 }
-.comp_info >div> div > a {
+
+.comp_info > div > div > h3 {
+    margin-bottom: 20px;
+    color: greenyellow;
+    cursor: default;
+}
+
+.comp_info > div > div > a {
     text-decoration: none;
     color: #fff;
     padding: 10px 30px;
@@ -126,7 +133,7 @@ header>img{
 }
 
 .text_modal > h1 {
-    padding-bottom: 25px;
+    padding: 20px 0;
 }
 
 img {
@@ -134,11 +141,23 @@ img {
 }
 
 .pc1,
-.pc2 {
+.pc2,
+.pc5 {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.pc3,
+.pc4,
+.pc6 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 20px;
 }
 
 .img_arr {
