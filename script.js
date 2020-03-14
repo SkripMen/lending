@@ -39,14 +39,21 @@ window.onclick = function (e) {
     }
     else if(e.target == popup3){
         popup3.style.display = "none";
-    }
-    else if(e.target == popup4){
+    } else if (e.target == popup4) {
         popup4.style.display = "none";
-    }
-    else if(e.target == popup5){
+    } else if (e.target == popup5) {
         popup5.style.display = "none";
-    }
-    else if(e.target == popup6){
+    } else if (e.target == popup6) {
         popup6.style.display = "none";
     }
 };
+
+let info = document.getElementById("map_info"),
+    map = document.getElementById("map");
+
+info.onmouseover = function () {
+    map.style.gridTemplateColumns = "1fr 2fr";
+}
+info.onmouseout = function () {
+    map.style.gridTemplateColumns = "2fr 1fr";
+}
