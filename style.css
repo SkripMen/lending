@@ -1,14 +1,6 @@
-@font-face {
-    font-family: "Fedra Sans Pro Light", "Fedra Sans Pro Bold";
-    src: url("font/FedraSansPro-Light.ttf");
-    src: url("font/FedraSansPro-Bold.ttf");
-}
-
 * {
     margin: 0;
-    /*font-family: "Fedra Sans Pro Light";*/
-    /*Шрифты всё ещё не работают*/
-    font-family: "Fedra Sans Pro Light";
+    font-family: "Inter";
 }
 
 p {
