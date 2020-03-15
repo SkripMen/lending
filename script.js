@@ -1,8 +1,6 @@
 window.onclick = function (e) {
     let popup = document.getElementsByClassName("popup");
     for (let id = 0; id < popup.length; ++id) {
-        console.log(popup[id]);
-        console.log(e.target);
         if (e.target == popup[id]) {
             popup[id].style.display = "none";
         }
