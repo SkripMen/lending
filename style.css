@@ -19,13 +19,12 @@ header {
     background-color: #424242;
     height: 80px;
 }
-
 header > a > img {
     margin-top: 10px;
     height: 180px;
     position: absolute;
     z-index: 1;
-    margin-left: calc(50% - 180px / 2);
+    margin-left: calc(50% - 180px / 2 + 10px);
 }
 
 .banner {
