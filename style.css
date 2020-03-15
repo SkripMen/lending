@@ -8,7 +8,7 @@
     margin: 0;
     /*font-family: "Fedra Sans Pro Light";*/
     /*Шрифты всё ещё не работают*/
-    font-family: "Arial";
+    font-family: "Fedra Sans Pro Light";
 }
 
 p {
@@ -297,63 +297,6 @@ img {
 }
 
 .comment {
-    text-align: center;
-    padding: 0 20px;
-    margin-bottom: 40px;
-}
-
-.comment > h1 {
-    margin-bottom: 20px;
-}
-
-.comment > div {
-    display: grid;
-    grid-template-columns: 1fr 2px 1fr 2px 1fr;
-}
-
-.comment > div > div {
-    text-align: center;
-}
-
-.comment > div > div > img {
-    margin: auto 0;
-    width: 20%;
-    border-radius: 50%;
-}
-
-.comment > div > div > div {
-    margin-left: 10px;
-    text-align: left;
-    display: inline-block;
-}
-
-.map {
-    /*width: 100%;*/
-    margin: 50px 35px;
-    text-align: center;
-    height: 450px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    transition: .3s;
-    cursor: default;
-}
-
-.map > div > iframe {
-    width: 100%;
-    height: 450px;
-}
-
-.map_info {
-    padding-top: 200px;
-    background: #eaeaea;
-    cursor: pointer;
-}
-
-.map_info > h1 {
-    padding-bottom: 15px;
-}
-
-.comment {
     color: #fff;
     background: #424242;
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0px 95%);
@@ -392,6 +335,32 @@ img {
 .user > div > h1 {
     text-align: left;
     padding-left: 30px;
+}
+
+.map {
+    /*width: 100%;*/
+    margin: 50px 35px;
+    text-align: center;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    transition: .3s;
+    cursor: default;
+}
+
+.map > div > iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.map_info {
+    padding-top: 200px;
+    background: #eaeaea;
+    cursor: pointer;
+}
+
+.map_info > h1 {
+    padding-bottom: 15px;
 }
 
 .rent {
