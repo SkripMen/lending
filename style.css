@@ -185,7 +185,7 @@ img {
 
 .gal {
     clip-path: polygon(0 0, 100% 3%, 100% 97%, 0 100%);
-    background: center url("img/galary.jpg") fixed;
+    background: center url("img/galary.jpg") #424242 no-repeat fixed;
     height: 1250px;
     text-align: center;
     color: #fff;
@@ -288,6 +288,35 @@ img {
     width: 50%;
 }
 
+.map {
+    margin: 50px 35px;
+    text-align: center;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    transition: .3s;
+    cursor: default;
+}
+
+.map > div > iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.map_info {
+    padding-top: 200px;
+    background: #eaeaea;
+    cursor: pointer;
+}
+
+.map_info > p {
+    cursor: pointer;
+}
+
+.map_info > h1 {
+    padding-bottom: 15px;
+}
+
 .comment {
     color: #fff;
     background: #424242;
@@ -327,32 +356,6 @@ img {
 .user > div > h1 {
     text-align: left;
     padding-left: 30px;
-}
-
-.map {
-    /*width: 100%;*/
-    margin: 50px 35px;
-    text-align: center;
-    height: 450px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    transition: .3s;
-    cursor: default;
-}
-
-.map > div > iframe {
-    width: 100%;
-    height: 450px;
-}
-
-.map_info {
-    padding-top: 200px;
-    background: #eaeaea;
-    cursor: pointer;
-}
-
-.map_info > h1 {
-    padding-bottom: 15px;
 }
 
 .rent {
@@ -444,3 +447,213 @@ a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
+
+
+@media screen and (min-width: 1200px) {
+    .comp_info {
+        margin: 20px 20px;
+        height: max-content;
+    }
+
+    .bg_img1,
+    .bg_img2,
+    .bg_img3,
+    .bg_img4,
+    .bg_img5,
+    .bg_img6,
+    .bg_img7,
+    .bg_img8,
+    .bg_img9 {
+        height: 350px;
+    }
+
+    .img_arr > div {
+        height: 300px;
+        background-size: 110%;
+    }
+
+    .gal {
+        height: 1100px;
+    }
+
+    .form_img {
+        width: 550px;
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .img_arr > div {
+        height: 250px;
+        background-size: 110%;
+    }
+
+    .gal {
+        height: 950px;
+    }
+
+    .form_img {
+        width: 500px;
+        height: 600px;
+    }
+
+    .form {
+        padding-top: 20px;
+    }
+
+    .form > h1 {
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header > a > img {
+        margin-top: 25px;
+        height: auto;
+        width: 100px;
+        margin-left: calc(50% - 100px / 2);
+    }
+
+    .about {
+        padding: 35px 0 50px;
+    }
+
+    .comp_info {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 20px 40px;
+        height: 1050px;
+    }
+
+    .img_arr {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .img_arr > div {
+        height: 300px;
+        background-size: 110%;
+    }
+
+    .gal {
+        height: 1750px;
+    }
+
+    .partners > div > p {
+        font-size: 20px;
+    }
+
+    .map {
+        height: 600px;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .map > div > iframe {
+        width: 100%;
+        height: 450px;
+    }
+
+    .map_info {
+        height: 150px;
+        padding-top: 20px;
+    }
+
+    .comment {
+        background-size: 155%;
+    }
+
+    .user_com {
+        display: block;
+    }
+
+    .rent {
+        display: block;
+        margin: 10px 30px 0;
+    }
+
+    .form_img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text {
+        font-size: 25px;
+        top: calc(15% - 30px / 2);
+        left: calc(50% - 167px / 2);
+    }
+
+    .about {
+        padding: 35px 0 50px;
+    }
+
+    .comp_info {
+        grid-template-columns: repeat(1, 1fr);
+        height: 2100px;
+    }
+
+    .img_arr {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 25px 40px;
+    }
+
+    .img_arr > div {
+        height: 350px;
+        background-size: 110%;
+    }
+
+    .gal {
+        clip-path: polygon(0 0, 100% 1%, 100% 99%, 0 100%);
+        height: 3560px;
+    }
+
+    .partners > div > p {
+        font-size: 18px;
+    }
+
+    .partners > div > img {
+        width: 100%;
+    }
+
+    .comment {
+        clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 99%);
+        background-size: 200%;
+    }
+
+    .user_com {
+        display: block;
+    }
+
+    .rent {
+        display: block;
+        margin: 10px 30px 0;
+    }
+
+    .form_img {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 15px;
+        display: block;
+        margin: 0;
+    }
+
+    footer > a {
+        padding-left: -30px;
+    }
+}
+
+/*
+1200px
+992px
+768px
+480px
+320px
+*/
